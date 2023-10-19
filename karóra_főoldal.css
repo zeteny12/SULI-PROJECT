@@ -1,0 +1,223 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('hatter_fooldal/hatter.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/*CIM*/
+#cim{
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+/*BEJELENTKEZES_IKON*/
+#login{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    z-index: 500;
+    box-sizing: content-box;
+}
+
+#login span a{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+#login a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+/*KEPEK_DIV*/
+.kep{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*SVAJCI_NEMET_KEPEK*/
+.csomag{
+    position: relative;
+    margin: 30px;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+.csomag img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    border-radius: 15px;
+}
+
+/*SVAJCI_KEP_ALATTI_GOMB*/
+#svajci_gomb{
+    border: 1px solid #fff;
+    border-radius: 110px;
+    font-size: 30px;
+    display: inline-block;
+    padding: 10px;
+    padding-inline: 20px;
+}
+
+#svajci_gomb:hover{
+    transform: translateX(10px);
+    transition: 0.3s;
+}
+
+#svajci_gomb:not(:hover){
+    transition: 0.3s;
+    transition: scale(1);
+}
+
+#svajci_gomb_link{
+    color: #fff;
+    text-decoration: none;
+}
+
+/*NEMET_KEP_ALATTI_GOMB*/
+#nemet_gomb{
+    border: 1px solid #fff;
+    border-radius: 110px;
+    font-size: 30px;
+    display: inline-block;
+    padding: 10px;
+    padding-inline: 20px;
+
+}
+
+#nemet_gomb_link{
+    color: #fff;
+    text-decoration: none;
+}
+
+#nemet_gomb:hover{
+    transform: translateX(10px);
+    transition: 0.3s;
+}
+
+#nemet_gomb:not(:hover){
+    transition: 0.3s;
+    transition: scale(1);
+}
+
+
+/*FOOTER*/
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: 220px;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 10px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.elerhetoseg{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.elerhetoseg li{
+    margin: 0 10px;
+}
+.elerhetoseg a{
+    text-decoration: none;
+    color: #fff;
+}
+.elerhetoseg a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.elerhetoseg a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 428px) {
+    #cim_div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #cim {
+        font-size: 30px;
+    }
+
+    .kep {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .csomag, .kep .svajci_kep_div,
+    .kep .nemet_kep_div {
+        width: 97%;
+        height: auto; /* Átméretezés a képarányok megtartásával */
+        overflow: hidden;
+        margin: 10px 0; /* Alkalmazható margó a képek között */
+    }
+}

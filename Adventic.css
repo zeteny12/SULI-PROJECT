@@ -1,0 +1,310 @@
+/*FEJLÉC*/
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 1px 1px 3px black;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    color: black;
+  }
+  
+  .header-center a:hover{
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: rgb(67, 79, 90);
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-center{
+    display: flex;
+    text-align: center;
+    justify-content:center;
+  }
+  .header-right{
+    float: right;
+    position: relative;
+    padding: 10px;
+    margin-right: 20px;
+    margin-top: -33px;
+
+}
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+
+/* BEJELENTKEZES*/
+#Svajci_login{
+    position: absolute;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    z-index: 500;
+    box-sizing: content-box;
+}
+
+#Svajci_login, #Svajci_login_ikon h3 span{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+#Svajci_login h3{
+    color: #000000;
+}
+
+#Svajci_login, #Svajci_login_ikon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+#Svajci_login_ikon{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    
+}
+.vezerlo{
+    color: black;
+    text-decoration: none;
+    float: none;
+}
+.vezerlo:hover{
+    color: black;
+}
+.egyeduli-teremek container{
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 25px;
+    margin-right: 20px;
+    padding: 0;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-6 p{
+    text-align:justify;
+}
+.egyeduli-termek{
+    margin-top: 80px;
+    float: center;
+}
+.egyeduli-termek .col-6 img{
+    padding:0;
+}
+.egyeduli-termek .col-6{
+    padding:20px;
+}
+.egyeduli-termek h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.egyeduli-termek select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+.egyeduli-teremek input{
+    width: 50px;    
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+input:focus{
+    outline: none;
+}
+.egyeduli-termek .fa{
+    color: #ff523b;
+    margin-left: 10px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-decoration: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    color:black;
+    text-decoration: none;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: 220px;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 10px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.elerhetoseg{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.elerhetoseg li{
+    margin: 0 10px;
+}
+.elerhetoseg a{
+    text-decoration: none;
+    color: #fff;
+}
+.elerhetoseg a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.elerhetoseg a:hover i{
+    color: #fff;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
