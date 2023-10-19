@@ -196,28 +196,140 @@ footer{
 }
 
 /*RESPONSIVE*/
-@media (max-width: 428px) {
+/*1299px*/
+@media (max-width: 1299px){
     #cim_div {
         display: flex;
         align-items: center;
         justify-content: center;
     }
+    #svajci_gomb, #nemet_gomb{
+        margin-top: 15px;
+    }
+    .csomag, .kep .svajci_kep_div,
+    .kep .nemet_kep_div {
+        width: 86%; 
+        overflow: hidden;
+        margin: auto;
+    }
+}
 
+/*999px*/
+@media (max-width: 999px){
+    #svajci_gomb{
+        margin-bottom: 100px;
+    }
+    #svajci_gomb, #nemet_gomb{
+        margin-top: 15px;
+    }
+    .kep {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .csomag, .kep .svajci_kep_div,
+    .kep .nemet_kep_div {
+        width: 88%;
+        height: auto; 
+        overflow: hidden;
+        margin: auto;
+    }
+}
+
+/*810px*/
+@media (max-width: 810px){
+    #cim {
+        font-size: 50px;
+    }
+    #svajci_gomb, #nemet_gomb{
+        margin-top: 15px;
+    }
+    #svajci_gomb{
+        margin-bottom: 100px;
+    }
+    .kep {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .csomag, .kep .svajci_kep_div,
+    .kep .nemet_kep_div {
+        width: 90%;
+        height: auto; 
+        overflow: hidden;
+        margin: auto;
+    }
+}
+
+/*600px*/
+@media (max-width: 600px){
+    #cim {
+        font-size: 40px;
+    }
+    #svajci_gomb, #nemet_gomb{
+        margin-top: 15px;
+    }
+    .kep {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .csomag, .kep .svajci_kep_div,
+    .kep .nemet_kep_div {
+        width: 92%;
+        height: auto; 
+        overflow: hidden;
+        margin: auto; 
+    }
+}
+
+/*480px*/
+@media (max-width: 480px){
+    #svajci_gomb, #nemet_gomb{
+        margin-top: 15px;
+    }
+    .kep {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .csomag, .kep .svajci_kep_div,
+    .kep .nemet_kep_div {
+        width: 94%;
+        height: auto; 
+        overflow: hidden;
+        margin: auto; 
+    }
+}
+
+/*428px*/
+@media (max-width: 428px) {
     #cim {
         font-size: 30px;
     }
-
+    #svajci_gomb{
+        margin-bottom: 50px;
+    }
     .kep {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
     .csomag, .kep .svajci_kep_div,
     .kep .nemet_kep_div {
         width: 97%;
-        height: auto; /* Átméretezés a képarányok megtartásával */
+        height: auto; 
         overflow: hidden;
-        margin: 10px 0; /* Alkalmazható margó a képek között */
+        margin: auto; 
     }
 }
